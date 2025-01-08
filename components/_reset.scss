@@ -1,0 +1,23 @@
+.container{
+    max-width: 1600px;
+}
+body{
+    background: #011A18;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+@mixin nav_btn($theme: #5CE1E6) {
+    background: $theme;
+    font-size: 20px;
+    font-weight: 400;
+    color: #111111;
+    font-family: "Poppins", serif;
+    padding: 10px 22px;
+    border: none;
+  }

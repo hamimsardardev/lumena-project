@@ -1,0 +1,44 @@
+#banner_part {
+.banner{
+    padding: 253px 0 92px;
+    .left_part {    
+        h5 {
+          font-family: "Poppins", serif;
+          font-weight: 400;
+          color: #ffffff;
+          font-size: 55px;
+          width: 917px;
+          span {
+            text-transform: capitalize;
+            color: #5ce1e6;
+            font-weight: 700;
+          }
+        }
+        p {
+          font-family: "Poppins", serif;
+          font-weight: 400;
+          color: #ffffff;
+          font-size: 20px;
+          width: 857px;
+        }
+        .banner_btn {
+                button {
+            @include nav_btn();
+            border: 1px solid transparent;
+            &:hover{
+                background: transparent;
+                color: #ffffff;
+                border: 1px solid #ffffff;
+            }
+          }
+          :nth-child(2) {
+            margin-left: 30px;
+          }
+        }
+      }
+      .image{
+        display: flex;
+        justify-content: center;
+      }
+}
+}

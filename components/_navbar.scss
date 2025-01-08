@@ -1,0 +1,26 @@
+header{
+    padding: 8px 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    nav{
+        .container{
+            background: linear-gradient(to left, #ffffff39, #0c6f6a32);
+            .navbar-nav{
+                gap: 50px;
+                .nav-item{
+                    font-family: "Poppins", serif;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    font-size: 22px;
+                }                
+            }
+            button{
+                @include nav_btn();
+                i{
+                    margin-right: 10px;
+                }
+            }            
+        }
+    }
+}
