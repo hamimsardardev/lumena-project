@@ -1,0 +1,43 @@
+#lumena_part {
+    background: #011A18;
+    padding-bottom: 120px;
+  .title {
+    h1 {
+      font-family: "Poppins", serif;
+      font-weight: 700;
+      color: #5CE1E6;
+      font-size: 120px;
+      text-shadow: #5CE1E6 5px 2px 0px, #5CE1E6 5px 4px 0px;
+      text-align: center;
+      margin-bottom: 51px;
+    }
+  }
+  .lumenacard{
+    background:linear-gradient(to left, rgba(0, 246, 255, .50), rgba(0, 255, 68, .50), rgba(255, 255, 255, .08));
+    padding: 47px 43px 39px 30px;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
+    img{
+        padding: 15px 15px;
+        border: 1px solid #5CE1E6;
+    }
+    h3{
+        font-family: "Poppins", serif;
+      font-weight: 700;
+      color: #FFFF;
+      font-size: 45px;
+      width: 440px;
+      margin-top: 33px;
+    }
+    p{
+        font-family: "Poppins", serif;
+      font-weight: 400;
+      color: #FFFF;
+      font-size: 20px;
+      width: 447px;
+      margin-top: 16px;
+    }
+    .lastcard{
+        padding-bottom: 58px;
+    }
+  }
+}

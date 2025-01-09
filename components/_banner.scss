@@ -1,44 +1,78 @@
 #banner_part {
-.banner{
-    padding: 253px 0 92px;
-    .left_part {    
-        h5 {
-          font-family: "Poppins", serif;
-          font-weight: 400;
-          color: #ffffff;
-          font-size: 55px;
-          width: 917px;
-          span {
-            text-transform: capitalize;
-            color: #5ce1e6;
-            font-weight: 700;
-          }
-        }
-        p {
-          font-family: "Poppins", serif;
-          font-weight: 400;
-          color: #ffffff;
-          font-size: 20px;
-          width: 857px;
-        }
-        .banner_btn {
-                button {
-            @include nav_btn();
-            border: 1px solid transparent;
-            &:hover{
-                background: transparent;
-                color: #ffffff;
-                border: 1px solid #ffffff;
-            }
-          }
-          :nth-child(2) {
-            margin-left: 30px;
-          }
+  position: relative;
+  .banner {
+    padding: 112px;    
+    .left_part {
+      margin-top: 253px;
+      h5 {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 55px;
+        width: 917px;
+        span {
+          text-transform: capitalize;
+          color: #5ce1e6;
+          font-weight: 700;
         }
       }
-      .image{
-        display: flex;
-        justify-content: center;
+      p {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 20px;
+        width: 857px;
+        margin-top: 11px;
       }
-}
+      .banner_btn {
+        button {
+          @include nav_btn();
+          border: 1px solid transparent;
+          margin-top: 55px;
+          &:hover {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+          }
+        }
+        :nth-child(2) {
+          margin-left: 30px;
+        }
+      }
+    }
+    .image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .scroll{
+    position: absolute;
+    bottom: 112px;
+    left: 50%;
+    a{
+      padding: 8px 29px;
+      background: transparent;
+      color: #ffffff;
+      border-radius: 40px;
+      border: 9px double rgba(255, 255, 255, .3);
+      transform: rotate(-90deg);
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 22px;
+      line-height: 51px;
+      position: relative;
+      &::after{
+        content: "";
+        top: 22px;
+        left: -7px;
+        height: 25px;
+        width: 8px;
+        background: #5ce1e6;
+        position: absolute;
+        border-radius: 40px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
 }

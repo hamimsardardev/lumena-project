@@ -23,6 +23,8 @@ header {
   margin-top: 50px;
 }
 header nav .container {
+  -webkit-clip-path: polygon(30% 0%, 98% 1%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+          clip-path: polygon(30% 0%, 98% 1%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
   background: linear-gradient(to left, rgba(255, 255, 255, 0.2235294118), rgba(12, 111, 106, 0.1960784314));
 }
 header nav .container .navbar-nav {
@@ -35,6 +37,8 @@ header nav .container .navbar-nav .nav-item {
   font-size: 22px;
 }
 header nav .container button {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 35%, 100% 80%, 100% 99%, 20% 100%, 0 100%, 0% 20%);
+          clip-path: polygon(0 0, 90% 0, 100% 35%, 100% 80%, 100% 99%, 20% 100%, 0 100%, 0% 20%);
   background: #5CE1E6;
   font-size: 20px;
   font-weight: 400;
@@ -47,8 +51,14 @@ header nav .container button i {
   margin-right: 10px;
 }
 
+#banner_part {
+  position: relative;
+}
 #banner_part .banner {
-  padding: 253px 0 92px;
+  padding: 112px;
+}
+#banner_part .banner .left_part {
+  margin-top: 253px;
 }
 #banner_part .banner .left_part h5 {
   font-family: "Poppins", serif;
@@ -68,6 +78,7 @@ header nav .container button i {
   color: #ffffff;
   font-size: 20px;
   width: 857px;
+  margin-top: 11px;
 }
 #banner_part .banner .left_part .banner_btn button {
   background: #5CE1E6;
@@ -78,6 +89,7 @@ header nav .container button i {
   padding: 10px 22px;
   border: none;
   border: 1px solid transparent;
+  margin-top: 55px;
 }
 #banner_part .banner .left_part .banner_btn button:hover {
   background: transparent;
@@ -90,4 +102,77 @@ header nav .container button i {
 #banner_part .banner .image {
   display: flex;
   justify-content: center;
+}
+#banner_part .scroll {
+  position: absolute;
+  bottom: 112px;
+  left: 50%;
+}
+#banner_part .scroll a {
+  padding: 8px 29px;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 40px;
+  border: 9px double rgba(255, 255, 255, 0.3);
+  transform: rotate(-90deg);
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 51px;
+  position: relative;
+}
+#banner_part .scroll a::after {
+  content: "";
+  top: 22px;
+  left: -7px;
+  height: 25px;
+  width: 8px;
+  background: #5ce1e6;
+  position: absolute;
+  border-radius: 40px;
+  transform: rotate(-90deg);
+}
+
+#lumena_part {
+  background: #011A18;
+  padding-bottom: 120px;
+}
+#lumena_part .title h1 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  color: #5CE1E6;
+  font-size: 120px;
+  text-shadow: #5CE1E6 5px 2px 0px, #5CE1E6 5px 4px 0px;
+  text-align: center;
+  margin-bottom: 51px;
+}
+#lumena_part .lumenacard {
+  background: linear-gradient(to left, rgba(0, 246, 255, 0.5), rgba(0, 255, 68, 0.5), rgba(255, 255, 255, 0.08));
+  padding: 47px 43px 39px 30px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
+          clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
+}
+#lumena_part .lumenacard img {
+  padding: 15px 15px;
+  border: 1px solid #5CE1E6;
+}
+#lumena_part .lumenacard h3 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  color: white;
+  font-size: 45px;
+  width: 440px;
+  margin-top: 33px;
+}
+#lumena_part .lumenacard p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+  width: 447px;
+  margin-top: 16px;
+}
+#lumena_part .lumenacard .lastcard {
+  padding-bottom: 58px;
 }/*# sourceMappingURL=style.css.map */
